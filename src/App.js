@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Content from './components/Content'
+import Content from './components/Content' //atualizar module
 
 
 //import view's
@@ -19,22 +19,22 @@ function App() {
 
     <div >
       <Router >
-        <div className="appView">
+        
         <div className='appHeader'>
         <Header />
         </div>
 
         <div className='appContent'>
-        <div className='content'>
+        <div className='switchContainer'>
         <Switch>
         <Route exact path='/'>
-        <Home className='content'/>
+        <Home className=''/>
         </Route>
         <Route exact path='/about'>
-        <About className='content'/>
+        <About className=''/>
         </Route>
         <Route exact path='/contact'>
-        <Contact className='content'/>
+        <Contact className=''/>
         </Route>
         </Switch>
         </div>
@@ -44,7 +44,7 @@ function App() {
         <div className='appFooter'>
           <Footer />
         </div>
-        </div>
+        
       </Router>
     </div>
   );

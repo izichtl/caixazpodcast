@@ -9,7 +9,7 @@ function Header() {
     }
     return (
         <div className='header'>
-            <span className='logo'>acaixaz</span>
+            <span className='logo'>acaixaz </span>
             <div className='nav'>
                 
                 <li>
