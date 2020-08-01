@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Content from './components/Content' //atualizar module
+
 
 
 //import view's
 import Home from './views/Home'
 import About from './views/About'
-import Contact from './views/Contact'
+import EpisodePage from './views/EpisodePage'
 
 function App() {
   return (
@@ -33,8 +33,8 @@ function App() {
         <Route exact path='/about'>
         <About className=''/>
         </Route>
-        <Route exact path='/contact'>
-        <Contact className=''/>
+        <Route exact path='/episodepage'>
+        <EpisodePage className=''/>
         </Route>
         </Switch>
         </div>

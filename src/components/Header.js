@@ -9,15 +9,21 @@ function Header() {
     }
     return (
         <div className='header'>
-            <span className='logo'>acaixaz </span>
+            <span className='logo'>
+            <Link 
+                to='/'
+                className='links'
+                onClick={b}
+                >
+            caixaz </Link></span>
+            
             <div className='nav'>
-                
                 <li>
                     <Link
-                        to='/'
+                        to='/episodepage'
                         className='links'
                         onClick={b}
-                    >Home</Link>
+                    >Episodes</Link>
                 </li>
                 <li>
                     <Link
@@ -25,13 +31,6 @@ function Header() {
                         className='links'
                         onClick={b}
                     >About</Link>
-                </li>
-                <li>
-                    <Link
-                        to='/contact'
-                        className='links'
-                        onClick={b}
-                    >Contato</Link>
                 </li>
             </div>
 

@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import { useAxiosGet } from '../Hooks/HttpRequests'
+import AwesomeComponent from '../components/Loading'
 
 
 function Contact() {
-      const url = `https://api.jsonbin.io/b/5f07ca805d4af74b01299012/9`
+      const url = `https://api.jsonbin.io/b/5f07ca805d4af74b01299012/16`
       
 
       
@@ -22,7 +23,9 @@ function Contact() {
       }
 
       if (itens.loading) {
-        content = <p>Carregando :) </p>
+        content = <div className='loading'> 
+          <AwesomeComponent/>
+        </div>
       }
 
       if (itens.data) {
@@ -30,7 +33,7 @@ function Contact() {
 
           content =
           itens.data.map((itens) =>
-            <div>
+            <div className='episodePage'>
             <Card item={itens}/>
             
             </div>

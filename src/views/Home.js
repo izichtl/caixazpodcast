@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Content from '../components/Content'
+import Episode from '../components/Episode'
+import HomeFixedContent from '../components/HomeFixedContent'
+import ReactPlayer from "react-player"
 
 
 
@@ -8,14 +10,9 @@ function Home(){
 
         
     return (
-        <div className='home'>
-          
-          <Content/>
-          <Content/>
-          <Content/>
-          <Content/>
-          <Content/>
-
+        <div className='homeContent'>
+          <HomeFixedContent/>
+          <Episode/>
         </div>
     );
 }

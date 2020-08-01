@@ -8,7 +8,7 @@ function Footer(){
         
     return (
         <div className='footer'>
-          <p>Ivan Zichtl - &copy; Copyright 2020 </p>
+          <p>Caixaz &copy; Copyright 2020 </p>
 
         </div>
     );

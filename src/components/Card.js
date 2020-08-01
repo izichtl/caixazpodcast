@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ReactPlayer from "react-player"
 
 
 function Card(props) {
@@ -12,7 +13,7 @@ function Card(props) {
                 </p>
                 <p className='cardText'>{props.item.description}</p>
             </div>
-
+            
 
         </div>
     )
