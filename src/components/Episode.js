@@ -19,9 +19,10 @@ function Episodes(){
         controls={true}
         url='https://storage.googleapis.com/media-session/elephants-dream/the-wires.mp3' />
         
-        <div>            
+        <div className='episodeInfo' >            
             <p className='episodeInfo' >Titulo do Post</p>
-            <p className='episodeInfo' >Volutpat est velit egestas dui. Velit egestas dui id ornare arcu odio ut sem. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. 
+            <p className='episodeInfo' >Volutpat est velit egestas dui. Velit egestas dui id ornare arcu odio ut sem. 
+            Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem.
             </p>
         </div>
         

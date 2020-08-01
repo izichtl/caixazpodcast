@@ -9,25 +9,26 @@ function About(){
         
     return (
         
-        <div className='episodeContent'>
+        <div className='aboutContent'>
             
 
-        <div className='episodeTitle'>
-        <h1 className='episodeName'>Just two latin american guys</h1>
+        <div className='aboutTitle'>
+        <div className='aboutName'> 
+        <h1 >Just two latin american guys</h1>
         </div>
         
-        <div>     
+        <div className='aboutImg' >     
 
-        <img className='aboutImg' src={link} />       
-        <p className='episodeInfo' >Fun thread alert</p>
-        <p className='episodeInfo' >
+        <img src={link} className='aboutImg1' />       
+        <p className='aboutInfo' >Fun thread alert</p>
+        <p className='aboutInfo' >
         Caixaz is a personal podcast realized by Ivan Zichtl and Thiago Zichtl, short talks about brazillian life style, art and places.
         </p>
         </div>
         
         </div>
 
-        
+    </div>
     );
 }
 

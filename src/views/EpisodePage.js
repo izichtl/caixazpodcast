@@ -23,8 +23,10 @@ function Contact() {
       }
 
       if (itens.loading) {
-        content = <div className='loading'> 
-          <AwesomeComponent/>
+        content = <div >
+          <div className='loading'>
+          <AwesomeComponent />
+          </div>
         </div>
       }
 
@@ -33,10 +35,11 @@ function Contact() {
 
           content =
           itens.data.map((itens) =>
+            
             <div className='episodePage'>
             <Card item={itens}/>
-            
             </div>
+            
           ))
 
       }

@@ -27,7 +27,7 @@ body {
 .appContent{
   position: relative;
   padding-top: 70px;
-  width: 80%;
+  width: 70%;
   margin: auto;
   
 
@@ -38,94 +38,23 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   
  
 }
 
 
-/* Header Component  */
-.appHeader{
-  background-color: rgb(35, 35, 35);
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  z-index: 1; 
-}
-.header{
-  background-color: rgb(121, 13, 13);
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  width: 80%;
-}
-.logo{
-  font-family: MontserratSub;
-  color: whitesmoke;
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  font-size: .9em;
-}
-.nav{
-  flex: 2;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-
-
-}
-.links {
-  color: whitesmoke;
-  text-decoration: none;
-}
-/* Header Component - END */
-
-
-/* FOOTER CSS  */
-.footer{
-  font-size: .8em;
-  background-color:rgb(35, 35, 35);
-  position: fixed;
-  bottom: 0;  
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-    
-}
-
-/* FOOTER CSS - END */
-
-.homeContent{
-  background-color: white;
-}
-
-
-.postImg{
-  width: 450px;
-  
-  border-radius: 8px 8px 0px 0px;
-}
-
-
-
-
-
-
-
 /* CSS  - CARD COMPONET --  */
 .CardConteiner{
-  max-width: 250px;
+  
   background-color: white;
   border-radius: 8px;
   flex-direction: column;
   color: rgb(39, 39, 39);
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  width: 310px;
+  margin: 13px 15px 10px 15px
   
-  margin: 0px 20px 30px 20px
 
 }
 .cardImg{
@@ -139,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  line-height: 10%;
+  line-height: 100%;
   
 }
 .cardTitle{
@@ -152,14 +81,464 @@ body {
 
 
 
+  
 
-/* RESPONSIVE CHANGES */
+.appHeader{
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1; 
+  padding: 3px;
+}
+.header{
+  font-size: 18px;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 70%;   
+}
+.links {
+  padding: .7em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.logo{
+  margin-right: 10px;
+  font-family: MontserratSub;
+  color: whitesmoke;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 0px 0px 5px ;
+  
+}
+.nav{
+  background-color: rgb(35, 35, 35);
+  flex: 2;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+
+}
+/*--Home | HomeContent -----------------------------------*/
+.homeContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px 10px 10px
+}
+.homeFixContent{
+  width: 80%;
+  background-color: white;
+  font-size: 20px;
+  font-family: MontserratSub;
+  line-height: .7;
+  padding: 3px;
+  text-align: justify;
+  
+}
+p.homeFixContent {
+  color: rgb(35, 35, 35);
+  line-height: 1.5;
+  font-family: 'Raleway';
+  width: 100%;
+}
+/*--Episode -----------------------------------*/
+.episodeContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-top: 2px solid #555555
+}
+.episodeTitle {
+  font-size: 20px;
+  font-family: MontserratSub;
+  line-height: .9;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  
+ 
+
+}
+
+.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+h1.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+  
+}
+p.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  
+}
+.episodeButton{
+  background-color: white;
+  width: 90px;
+  height: 50px;
+  border: 0px;
+  color:white;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 20px;
+  color: black;
+  border: 2px solid #555555
+}
+.episodeImg{
+  width:50%;
+}
 
 
-@media only screen and (max-width: 1100px) {
+.aboutContent{
+width: 100%;
+height: 800px;
+display: flex;
+justify-content: center;
+
+background-color: rgb(255, 255, 255);
+}
+.aboutTitle {
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 13px;
+font-family: MontserratSub;
+line-height: .9;
+}
+.aboutName{
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+p.aboutInfo{
+color: black;
+line-height: 1.5;
+font-size: 17px;
+}
+.aboutImg{
+  width: 70%;
+  
+  }
+.aboutImg1{
+width: 100%;
+
+}
+
+/*--Footer-----------------------------------*/
+
+.footer{
+  font-size: 18px;
+  background-color:rgb(35, 35, 35);
+  position: fixed;
+  bottom: 0;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+    
+}
+
+.loading{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px){
+.appContent{
+  position: relative;
+  padding-top: 70px;
+  width: 70%;
+  margin: auto;
+}
+
+.appHeader{
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1; 
+  padding: 3px;
+}
+.header{
+  font-size: 18px;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 70%;   
+}
+.links {
+  padding: .7em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.logo{
+  margin-right: 10px;
+  font-family: MontserratSub;
+  color: whitesmoke;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 0px 0px 5px ;
+  
+}
+.nav{
+  background-color: rgb(35, 35, 35);
+  flex: 2;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+
+}
+/*--Home | HomeContent -----------------------------------*/
+.homeContent{
+  width: 100%;
+  height: ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px 10px 10px
+}
+.homeFixContent{
+  width: 80%;
+  background-color: white;
+  font-size: 20px;
+  font-family: MontserratSub;
+  line-height: .7;
+  padding: 3px;
+  text-align: justify;
+  
+}
+p.homeFixContent {
+  color: rgb(35, 35, 35);
+  line-height: 1.5;
+  font-family: 'Raleway';
+  width: 100%;
+}
+/*--Episode -----------------------------------*/
+.episodeContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-top: 2px solid #555555
+}
+.episodeTitle {
+  font-size: 20px;
+  font-family: MontserratSub;
+  line-height: .9;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  
+ 
+
+}
+
+.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+h1.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+  
+}
+p.episodeInfo{
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: justify;
+  width: 100%;
+  
+}
+.episodeButton{
+  background-color: white;
+  width: 90px;
+  height: 50px;
+  border: 0px;
+  color:white;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 20px;
+  color: black;
+  border: 2px solid #555555
+}
+.episodeImg{
+  width:50%;
+}
+
+
+.aboutContent{
+width: 100%;
+height: 800px;
+display: flex;
+justify-content: center;
+
+background-color: rgb(255, 255, 255);
+}
+.aboutTitle {
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 13px;
+font-family: MontserratSub;
+line-height: .9;
+}
+.aboutName{
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+p.aboutInfo{
+color: black;
+line-height: 1.5;
+font-size: 17px;
+}
+.aboutImg{
+  width: 70%;
+  
+  }
+.aboutImg1{
+width: 100%;
+
+}
+
+
+.CardConteiner{
+  width: 220px;
+}
+/*--Footer-----------------------------------*/
+
+.footer{
+  font-size: 18px;
+  background-color:rgb(35, 35, 35);
+  position: fixed;
+  bottom: 0;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+    
+}
+
+.loading{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media only screen and (max-width: 720px) {
+  .CardConteiner{
+  width: 230px;
+  
+    
+  
+  }
   .appContent{
-    width: 100%;
-    background-color: rgb(226, 45, 45);
+    width: 80%;
+    
     padding-top: 50px;
   }  
   /*--Header-----------------------------------*/
@@ -179,7 +558,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center; 
-    width: 95%;   
+    width: 80%;   
   }
   .links {
     padding: .7em;
@@ -213,9 +592,9 @@ body {
     margin: 0px 10px 10px 10px
   }
   .homeFixContent{
-    width: 90%;
+    width: 100%;
     background-color: white;
-    font-size: 13px;
+    font-size: 16px;
     font-family: MontserratSub;
     line-height: .7;
     padding: 3px;
@@ -227,11 +606,11 @@ body {
   }
   /*--Episode -----------------------------------*/
   .episodeContent{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3px 3px 3px 3px;
+    
     background-color: rgb(255, 255, 255);
     color: black;
     border-top: 2px solid #555555
@@ -240,225 +619,77 @@ body {
     font-size: 20px;
     font-family: MontserratSub;
     line-height: .9;
-    padding: 0px 10px 0px 10px;
     display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-
+    justify-content: space-between;
+    width: 100%;
+    
+   
+  
   }
   
-  p.episodeInfo{
+  .episodeInfo{
     color: black;
     line-height: 1.5;
     font-size: 16px;
-  }
-  .episodeButton{
-    background-color: white;
-    width: 90px;
-    height: 50px;
-    border: 0px;
-    color:white;
-    font-weight: 600;
-    line-height: 1.6;
-    margin: 20px;
-    color: black;
-    border: 2px solid #555555
-  }
-  .episodeImg{
-    width:50%;
-  }
- /*--About -----------------------------------*/
- .aboutContent{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3px 3px 3px 3px;
-  background-color: rgb(255, 255, 255);
-}
-.aboutTitle {
-  font-size: 13px;
-  font-family: MontserratSub;
-  line-height: .9;
-  padding: 0px 3px 0px 3px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-
-}
-p.aboutInfo{
-  color: black;
-  line-height: 1.5;
-  font-size: 16px;
-}
-.aboutImg{
-  width:100%;
-}
- /*--Card -----------------------------------*/
-  .CardConteiner{
-    width: 190px;
-    margin: 13px 15px 10px 15px
-  }
-/*--Footer-----------------------------------*/
-
-  .footer{
-    font-size: 13px;
-    background-color:rgb(35, 35, 35);
-    position: fixed;
-    bottom: 0;  
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-      
-  }
-  
-}
-@media only screen and (max-width: 960px) {
-  .appContent{
-    width: 100%;
-    background-color: rgb(226, 45, 45);
-    padding-top: 50px;
-  }  
-  /*--Header-----------------------------------*/
-  .appHeader{
-    background-color: rgb(35, 35, 35);
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    z-index: 1; 
-    padding: 3px;
-  }
-  .header{
-    font-size: 18px;
-    background-color: rgb(35, 35, 35);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; 
-    width: 95%;   
-  }
-  .links {
-    padding: .7em;
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  .logo{
-    margin-right: 10px;
-    font-family: MontserratSub;
-    color: whitesmoke;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0px 0px 0px 5px ;
+    align-items: flex-start;
+    flex-direction: column;
     
   }
-  .nav{
-    background-color: rgb(35, 35, 35);
-    flex: 2;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-  
-  }
-  /*--Home | HomeContent -----------------------------------*/
-  .homeContent{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 10px 10px 10px
-  }
-  .homeFixContent{
-    width: 90%;
-    background-color: white;
-    font-size: 13px;
-    font-family: MontserratSub;
-    line-height: .7;
-    padding: 3px;
-  }
-  p.homeFixContent {
-    color: rgb(35, 35, 35);
-    line-height: 1.5;
-    font-family: 'Raleway';
-  }
-  /*--Episode -----------------------------------*/
-  .episodeContent{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3px 3px 3px 3px;
-    background-color: rgb(255, 255, 255);
+  h1.episodeInfo{
     color: black;
-    border-top: 2px solid #555555
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: justify;
+    width: 100%;
+    
   }
-  .episodeTitle {
-    font-size: 20px;
-    font-family: MontserratSub;
-    line-height: .9;
-    padding: 0px 10px 0px 10px;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-
-  }
-  
   p.episodeInfo{
     color: black;
     line-height: 1.5;
-    font-size: 16px;
-  }
-  .episodeButton{
-    background-color: white;
-    width: 90px;
-    height: 50px;
-    border: 0px;
-    color:white;
-    font-weight: 600;
-    line-height: 1.6;
-    margin: 20px;
-    color: black;
-    border: 2px solid #555555
-  }
-  .episodeImg{
-    width:50%;
+    font-size: 20px;
+    text-align: justify;
+    width: 100%;
+    
   }
  /*--About -----------------------------------*/
+
  .aboutContent{
-  width: 90%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(255, 255, 255);
+  }
+  .aboutTitle {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px 3px 3px 3px;
-  background-color: rgb(255, 255, 255);
-}
-.aboutTitle {
   font-size: 13px;
   font-family: MontserratSub;
   line-height: .9;
-  padding: 0px 3px 0px 3px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-
-}
-p.aboutInfo{
+  }
+  .aboutName{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  p.aboutInfo{
   color: black;
   line-height: 1.5;
-  font-size: 16px;
-}
-.aboutImg{
-  width:100%;
-}
- /*--Card -----------------------------------*/
-  .CardConteiner{
-    width: 190px;
-    margin: 13px 15px 10px 15px
+  font-size: 17px;
+  }
+  .aboutImg{
+    width: 90%;
+    
+    }
+  .aboutImg1{
+  width: 100%;
+  
   }
 /*--Footer-----------------------------------*/
 
@@ -476,6 +707,19 @@ p.aboutInfo{
   }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 580px) {
   .appContent{
@@ -590,32 +834,43 @@ p.aboutInfo{
     width:50%;
   }
  /*--About -----------------------------------*/
+
  .aboutContent{
-  width: 90%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(255, 255, 255);
+  }
+  .aboutTitle {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px 3px 3px 3px;
-  background-color: rgb(255, 255, 255);
-}
-.aboutTitle {
   font-size: 13px;
   font-family: MontserratSub;
   line-height: .9;
-  padding: 0px 3px 0px 3px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-
-}
-p.aboutInfo{
+  }
+  .aboutName{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  p.aboutInfo{
   color: black;
   line-height: 1.5;
-  font-size: 16px;
-}
-.aboutImg{
-  width:100%;
-}
+  font-size: 17px;
+  }
+  .aboutImg{
+    width: 70%;
+    
+    }
+  .aboutImg1{
+  width: 100%;
+  
+  }
  /*--Card -----------------------------------*/
   .CardConteiner{
     width: 190px;
@@ -749,34 +1004,46 @@ p.aboutInfo{
     width:50%;
   }
  /*--About -----------------------------------*/
+
  .aboutContent{
-  width: 90%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(255, 255, 255);
+  }
+  .aboutTitle {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px 3px 3px 3px;
-  background-color: rgb(255, 255, 255);
-}
-.aboutTitle {
   font-size: 13px;
   font-family: MontserratSub;
   line-height: .9;
-  padding: 0px 3px 0px 3px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-
-}
-p.aboutInfo{
+  }
+  .aboutName{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  p.aboutInfo{
   color: black;
   line-height: 1.5;
-  font-size: 16px;
-}
-.aboutImg{
-  width:100%;
-}
+  font-size: 17px;
+  }
+  .aboutImg{
+    width: 70%;
+    
+    }
+  .aboutImg1{
+  width: 100%;
+  
+  }
  /*--Card -----------------------------------*/
   .CardConteiner{
+    width: 140px;
     margin: 13px 15px 10px 15px
   }
 /*--Footer-----------------------------------*/
@@ -923,35 +1190,43 @@ p.aboutInfo{
 
  /*--About -----------------------------------*/
 
+
  .aboutContent{
-  width: 90%;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(255, 255, 255);
+  }
+  .aboutTitle {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px 3px 3px 3px;
-  background-color: rgb(255, 255, 255);
- 
-  
-}
-.aboutTitle {
   font-size: 13px;
   font-family: MontserratSub;
   line-height: .9;
-  padding: 0px 3px 0px 3px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-
-}
-p.aboutInfo{
+  }
+  .aboutName{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  p.aboutInfo{
   color: black;
   line-height: 1.5;
-  font-size: 16px;
-}
-.aboutImg{
-  width:100%;
-}
-
+  font-size: 17px;
+  }
+  .aboutImg{
+    width: 70%;
+    
+    }
+  .aboutImg1{
+  width: 100%;
+  
+  }
 
 
 
