@@ -1,7 +1,7 @@
 ## CaixaZ - Podcast
 >Responsive Site por host a personal podcast project, this project is under constrution [here](https://observerplayground.herokuapp.com/).
 
-![Screen](https://github.com/izichtl/indicecalorico/blob/master/img/indicecalorico.png?raw=true) 
+![Screen](https://raw.githubusercontent.com/izichtl/caixazpodcast/master/src/img/host_img-01.png) 
 ### Installation
 Install dependency 
 >npm install
