@@ -1,5 +1,5 @@
 ## CaixaZ - Podcast
->Responsive Site por host a personal podcast project, this project is under constrution [here](https://observerplayground.herokuapp.com/).
+>Responsive Site por host a personal podcast project, this project is under constrution, you can access latest version [here](https://caixaz.herokuapp.com/).
 
 ![Screen](https://raw.githubusercontent.com/izichtl/caixazpodcast/master/src/img/host_img-01.png) 
 ### Installation
