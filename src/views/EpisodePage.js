@@ -22,13 +22,15 @@ function Contact() {
             </p>
       }
 
-      if (itens.loading) {
-        content = <div >
-          <div className='loading'>
-          <AwesomeComponent />
-          </div>
-        </div>
-      }
+      //TODO align to center the loading animation
+
+      // if (itens.loading) {
+      //   content = <div >
+      //     <div className='loading'>
+      //     <AwesomeComponent />
+      //     </div>
+      //   </div>
+      // }
 
       if (itens.data) {
         return (

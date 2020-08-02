@@ -24,6 +24,10 @@ function About(){
         <p className='aboutInfo' >
         Caixaz is a personal podcast realized by Ivan Zichtl and Thiago Zichtl, short talks about brazillian life style, art and places.
         </p>
+        <p className='aboutInfo' >
+        This project uses example images from unsplash!
+        </p>
+        
         </div>
         
         </div>
