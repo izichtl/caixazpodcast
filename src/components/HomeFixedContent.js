@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 
 
@@ -15,12 +14,7 @@ function HomeFixedContent(){
         accumsan tortor posuere ac ut consequat sempeiaculis urna. Luctus accumsan tortor posuere ac ut 
         iaculis urna. Luctus accumsan tortor posuere ac ut consequat semper viverra 
         consequat semper viverra na viverra nam.  nam. 
-        
-        
-        
         </p>
-           
-        
         </div>
     );
 }

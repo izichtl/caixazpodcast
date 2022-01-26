@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import { useAxiosGet } from '../Hooks/HttpRequests'
-import AwesomeComponent from '../components/Loading'
 
 
 function Contact() {

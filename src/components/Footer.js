@@ -1,5 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 
 
@@ -8,7 +8,7 @@ function Footer(){
         
     return (
         <div className='footer'>
-          <p>Caixaz &copy; Copyright 2020 </p>
+          <p>Desenvolvido por <a target='_blank' href="https://www.izichtl.com"> Ivan Zichtl</a></p>
 
         </div>
     );

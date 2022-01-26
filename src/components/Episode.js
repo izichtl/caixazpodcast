@@ -36,10 +36,8 @@ function Episodes(props){
     return (
         <div className='episodeContent'>
         <div className='episodeTitle'>
-        <h1 className='episodeName'> { data.title } </h1><a>
-          
+        <h1 className='episodeName'> { data.title } </h1>
         <button type="submit" onClick={handleClick}>NOVO EPISÓDIO</button>
-        </a>
         </div>
         <img 
           src={data.image}

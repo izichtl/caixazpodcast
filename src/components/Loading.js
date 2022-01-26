@@ -1,5 +1,4 @@
 import React from "react";
-import { css } from "@emotion/core";
 import BeatLoader from "react-spinners/BeatLoader";
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;

@@ -37,7 +37,12 @@ button:hover{
   background-color:  rgb(26, 26, 26);
   cursor: pointer;
 }
-
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
 /* PAGE CONTENT CSS */
 .appContent{
   position: relative;
