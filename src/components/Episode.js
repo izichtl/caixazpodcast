@@ -1,31 +1,69 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import ReactPlayer from "react-player"
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React, { useEffect, useState} from 'react';
+import { useAxiosGet } from '../Hooks/HttpRequests'
 
 
 
-function Episodes(){
 
-        
+function Episodes(props){
+  const [gat, setGat] = useState(0)
+  const [data, setData] = useState({
+      description: 'descrição',
+      iframe: "iframe",
+      image: "image",
+      subtitle: "subtitle",
+      title: "Title",
+  })
+  const url = `https://api.jsonbin.io/b/5f07ca805d4af74b01299012/23`
+  let itens = useAxiosGet(url)
+  let dataArray = itens.data;
+  
+    useEffect(()=>{
+      if(dataArray) {
+        const base = Math.random() * 10
+        const factor = parseInt(base.toPrecision(1))
+        if (typeof factor === 'number') {
+          console.log('int')
+        }
+        console.log(typeof factor);
+        setData(dataArray[factor])
+      }
+    }, [dataArray, gat])
+    const handleClick = () => {
+        setGat(Math.random())
+    }
     return (
         <div className='episodeContent'>
         <div className='episodeTitle'>
-        <h1 className='episodeName'>Maker's Place</h1>
-        <button className='episodeButton' type="button" onClick={null}>Random</button>
+        <h1 className='episodeName'> { data.title } </h1><a>
+          
+        <button type="submit" onClick={handleClick}>NOVO EPISÓDIO</button>
+        </a>
         </div>
-        <ReactPlayer 
-        width='80%'
-        height='60px'
-        controls={true}
-        url='https://storage.googleapis.com/media-session/elephants-dream/the-wires.mp3' />
-        
+        <img 
+          src={data.image}
+          atl='decorative'
+          className='imageHome' 
+        />
         <div className='episodeInfo' >            
-            <p className='episodeInfo' >Titulo do Post</p>
-            <p className='episodeInfo' >Volutpat est velit egestas dui. Velit egestas dui id ornare arcu odio ut sem. 
-            Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem.
-            </p>
-        </div>
+            <p className='episodeInfo' >{ data.subtitle}</p>
+            <p className='episodeInfo' >{ data.description }</p>
+        <iframe
+          width="100%" 
+          height="166" 
+          scrolling="no" 
+          frameborder="no" 
+          allow="autoplay" 
+          src={data.iframe}
+          >
+                </iframe>
         
+          <p className='episodeInfo' >{ data.description }</p>
+        </div>
+          <br />
+          <br />
+          <br />
         </div>
     );
 }

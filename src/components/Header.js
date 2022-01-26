@@ -15,22 +15,22 @@ function Header() {
                 className='links'
                 onClick={b}
                 >
-            caixaz </Link></span>
+            a caixaz </Link></span>
             
             <div className='nav'>
-                <li>
+                <li> 
                     <Link
                         to='/episodepage'
                         className='links'
                         onClick={b}
-                    >Episodes</Link>
+                    >Episódios</Link>
                 </li>
                 <li>
                     <Link
                         to='/about'
                         className='links'
                         onClick={b}
-                    >About</Link>
+                    >Sobre</Link>
                 </li>
             </div>
 

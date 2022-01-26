@@ -1,18 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import { set } from 'express/lib/application';
+import React, { useEffect, useState } from 'react';
 import Episode from '../components/Episode'
 import HomeFixedContent from '../components/HomeFixedContent'
-import ReactPlayer from "react-player"
+import { useAxiosGet } from '../Hooks/HttpRequests'
+
 
 
 
 function Home(){
 
-        
-    return (
-        <div className='homeContent'>
+
+  return (
+    <div className='homeContent'>
           <HomeFixedContent/>
-          <Episode/>
+          <Episode
+            />
         </div>
     );
 }

@@ -6,12 +6,8 @@ import AwesomeComponent from '../components/Loading'
 
 
 function Contact() {
-      const url = `https://api.jsonbin.io/b/5f07ca805d4af74b01299012/16`
-      
-
-      
+      const url = `https://api.jsonbin.io/b/5f07ca805d4af74b01299012/23`
       let itens = useAxiosGet(url)
-      
       let content = null;
       
 
@@ -21,16 +17,6 @@ function Contact() {
           Aconteceu um erro, atualize a página ou tente novamente mais tarde
             </p>
       }
-
-      //TODO align to center the loading animation
-
-      // if (itens.loading) {
-      //   content = <div >
-      //     <div className='loading'>
-      //     <AwesomeComponent />
-      //     </div>
-      //   </div>
-      // }
 
       if (itens.data) {
         return (

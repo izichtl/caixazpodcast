@@ -19,14 +19,17 @@ function About(){
         
         <div className='aboutImg' >     
 
-        <img src={link} className='aboutImg1' />       
-        <p className='aboutInfo' >Fun thread alert</p>
-        <p className='aboutInfo' >
-        Caixaz is a personal podcast realized by Ivan Zichtl and Thiago Zichtl, short talks about brazillian life style, art and places.
+        <img src={link} className='aboutImg1' />
+        <div className='aboutInfo' >
+        <h2>Desenvolvido por Ivan Zichtl</h2>
+        <p className='aboutInfo'>
+        Caixa Z podcast é um projeto de estudo, o objetivo foi realizar uma pagina de postagens com faixa de audio, 
+        utilizando dados disponiveis de forma pública, como faixa de áudio, texto e imagens. Desenvolvido em react e hospedado na vercel. 
         </p>
-        <p className='aboutInfo' >
-        This project uses example images from unsplash!
+        <p  className='aboutInfo'>
+        Este projeto utiliza imagens from unsplash, audios from soundcloud e json from jsonbin.io
         </p>
+        </div>       
         
         </div>
         
